@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String conversions</title>
+</head>
+<body>
+    <script>
+        let containerObj = {
+            fisrtVar : 123,
+            secondVar : 1e10,
+            thirdVar : null,
+            fourthVar : NaN,
+            fifthVar : Infinity,
+            sixthVar : undefined,
+            seventhVar : "awdwd"
+        };
+
+        for (const key in containerObj) {
+            if (Object.hasOwnProperty.call(containerObj, key)) {
+                // translates a value to a string literally(except for exponential numeric forms, which unwrap before conversation)
+                document.write(String(containerObj[key]) + '<br>');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.2.2/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.2.2/mocha.min.js" integrity="sha512-oXC8/IbLhzqkTEc1KTB5CullqApqZY3KihilcptKRbqDFTCG0OsfbNmArlM7warUN0faPurmCuOYhIO8zBRcDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.6/chai.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/13.0.2/sinon.js" integrity="sha512-Y94Lw/nvW+nuWjpdTX/nI3Myx8MLP3sv6PWhRPxGkijLnvPNxVca4KttVMm1+RyDB1S1W0LF4h85ebhHJy3HSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let assert = chai.assert;
+        let expect = chai.expect;
+    </script>
+    <script src="wrap.js"></script>
+    <script src="negativeArrayWrapper.js"></script>
+    <script src="makeObservable.js"></script>
+</head>
+<body>
+    <script src="tests.js"></script>
+  
+    <div id="mocha"></div>
+
+    <script>
+      mocha.run();
+    </script>
+</body>
+</html>

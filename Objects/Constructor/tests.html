@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.2.2/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.2.2/mocha.min.js" integrity="sha512-oXC8/IbLhzqkTEc1KTB5CullqApqZY3KihilcptKRbqDFTCG0OsfbNmArlM7warUN0faPurmCuOYhIO8zBRcDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.6/chai.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/2.3.4/sinon.js" integrity="sha512-pMIX8Uh2A5riFU5Zro6MUk77ZJhtCvVQejlmLxc1mLMOHoD9WQ+Yiupuoc36bbwsa7rK/fCzxyqBvZKvQo4MKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let assert = chai.assert;
+    </script>
+    <script src="funcDefinitions.js"></script>
+</head>
+<body>    
+    <script src="tests.js"></script>
+  
+    <div id="mocha"></div>
+  
+    <script>
+      mocha.run();
+    </script>
+</body>
+</html>
